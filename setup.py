@@ -44,7 +44,7 @@ setup(
     long_description=get_long_description(),
     maintainer="Kiwi TCMS",
     maintainer_email="info@kiwitcms.org",
-    url="https://github.com/kiwitcms/Kiwi/",
+    url="https://github.com/maica-angela/kiwi/",
     license="GPLv2",
     keywords="test case",
     install_requires=INSTALL_REQUIRES,

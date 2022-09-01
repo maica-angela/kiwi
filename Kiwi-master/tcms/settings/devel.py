@@ -8,7 +8,7 @@ import os
 from .common import *  # noqa: F403
 
 # Debug settings
-DEBUG = True
+DEBUG = False
 
 # Database settings
 DATABASES = {
