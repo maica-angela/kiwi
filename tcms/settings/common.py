@@ -133,8 +133,8 @@ CACHES = {
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/var/www/example.com/static/"
-STATIC_ROOT = "C:/Users/MaicaAngelaUrlanda/Documents/kiwi/node_modules"
-#"/Kiwi/static/"
+STATIC_ROOT = "/Kiwi/static/"
+#"C:/Users/MaicaAngelaUrlanda/Documents/kiwi/node_modules"
 
 
 
@@ -231,7 +231,7 @@ STATICFILES_DIRS = [
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
     os.path.join(TCMS_ROOT_PATH, "static").replace("\\", "/"),
-    os.path.join(TCMS_ROOT_PATH, "node_modules").replace("\\", "/"),
+    os.path.join(TCMS_ROOT_PATH, "C:\Users\MaicaAngelaUrlanda\Documents\kiwi\node_modules").replace("\\", "/"),
 ]
 
 # List of finder classes that know how to find static files in
