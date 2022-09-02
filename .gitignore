@@ -15,6 +15,5 @@ docs/target/
 .idea/
 .vscode/
 .cache/
-tcms/node_modules/
 package-lock.json
 node_modules
