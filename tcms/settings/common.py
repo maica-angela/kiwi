@@ -4,6 +4,7 @@ import os
 import pathlib
 import tempfile
 from importlib import import_module
+from django.conf import settings
 
 import pkg_resources
 from django.contrib.messages import constants as messages
@@ -133,7 +134,7 @@ CACHES = {
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/var/www/example.com/static/"
-STATIC_ROOT = "/Kiwi/static/"
+#STATIC_ROOT = "/Kiwi/static/"
 #"C:/Users/MaicaAngelaUrlanda/Documents/kiwi/node_modules"
 
 
