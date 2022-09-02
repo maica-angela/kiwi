@@ -313,6 +313,7 @@ INSTALLED_APPS = TENANT_APPS + [
     "tcms.kiwi_auth",
     "tcms.telemetry",
     "tcms.rpc",
+    "kiwi"
 ]
 
 for plugin in pkg_resources.iter_entry_points("kiwitcms.plugins"):
