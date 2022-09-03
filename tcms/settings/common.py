@@ -224,7 +224,7 @@ MEDIA_URL = "/uploads/"
 
 # URL prefix for static files.
 # Example: "http://example.com/static/", "http://static.example.com/"
-STATIC_URL = "/static/"
+STATIC_URL = "/staticfiles/"
 
 # Additional locations of static files
 STATICFILES_DIRS = [
@@ -232,7 +232,7 @@ STATICFILES_DIRS = [
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
     os.path.join(TCMS_ROOT_PATH, "static").replace("\\", "/"),
-    os.path.join(TCMS_ROOT_PATH, "C:/Users/MaicaAngelaUrlanda/Documents/kiwi/node_modules").replace("\\", "/"),
+    os.path.join(TCMS_ROOT_PATH, "staticfiles").replace("\\", "/"),
 ]
 
 # List of finder classes that know how to find static files in
@@ -313,7 +313,7 @@ INSTALLED_APPS = TENANT_APPS + [
     "tcms.kiwi_auth",
     "tcms.telemetry",
     "tcms.rpc",
-    "kiwi"
+    
 ]
 
 for plugin in pkg_resources.iter_entry_points("kiwitcms.plugins"):
