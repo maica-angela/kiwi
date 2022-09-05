@@ -134,7 +134,8 @@ CACHES = {
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/var/www/example.com/static/"
-#STATIC_ROOT = "/Kiwi/static/"
+STATIC_ROOT = "/Kiwi/static/"
+
 #"C:/Users/MaicaAngelaUrlanda/Documents/kiwi/node_modules"
 
 
@@ -312,7 +313,8 @@ INSTALLED_APPS = TENANT_APPS + [
     "tcms.core",
     "tcms.kiwi_auth",
     "tcms.telemetry",
-    "tcms.rpc"
+    "tcms.rpc",
+   
 ]
 
 for plugin in pkg_resources.iter_entry_points("kiwitcms.plugins"):

@@ -65,6 +65,14 @@ for plugin in pkg_resources.iter_entry_points("kiwitcms.plugins"):
 
 
 if settings.DEBUG:
+
+    
+    from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+    urlpatterns += staticfiles_urlpatterns()
+
+    from django.conf.urls.static import static
+    urlpatterns += static('"/pics"/', document_root="'/var/www/pictures'/")
+   
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
     urlpatterns.extend(
         [
