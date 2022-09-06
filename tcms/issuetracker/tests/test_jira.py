@@ -118,7 +118,7 @@ class TestJIRAIntegration(APITestCase):
         )
         self.assertEqual(result["rc"], 0)
         self.assertIn(self.integration.bug_system.base_url, result["response"])
-        self.assertIn("https://jmeter.atlassian.net/jira/software/c/projects/TBL/issues-", result["response"])
+        self.assertIn("https://jmeter.atlassian.net/browse/TBL-1", result["response"])
 
         new_issue_id = self.integration.bug_id_from_url(result["response"])
         issue = self.integration.rpc.issue(new_issue_id)
