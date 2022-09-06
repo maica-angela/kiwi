@@ -18,7 +18,7 @@ from tcms.tests.factories import ComponentFactory, TestExecutionFactory
     "Bug tracker integration testing not enabled",
 )
 class TestJIRAIntegration(APITestCase):
-    existing_bug_id = "JIRA-1"
+    existing_bug_id = "TBL-1"
     existing_bug_url = "https://jmeter.atlassian.net/browse/TBL-1"
 
     def _fixture_setup(self):
