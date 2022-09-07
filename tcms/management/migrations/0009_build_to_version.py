@@ -42,6 +42,7 @@ def backwards(apps, schema_editor):
             data = json.load(infile)
             build.product = data["product"]
             build.save()
+            
 
 
 class Migration(migrations.Migration):
