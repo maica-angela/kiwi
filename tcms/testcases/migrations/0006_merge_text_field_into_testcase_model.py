@@ -58,7 +58,7 @@ def backward_restore_data(apps, schema_editor):
         "kiwitcms-testcases-migrations-0006-TestCaseText-*"
     ):
         with file.open("r") as infile:
-            data = json.load(infile)
+            data = json.loads(infile)
             test_case_text = test_case_text_model(**data)
             test_case_text.save()
 

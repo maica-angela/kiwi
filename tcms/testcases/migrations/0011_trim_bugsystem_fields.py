@@ -21,7 +21,7 @@ def backwards_restore_data(apps, schema_editor):
 
     for file in settings.TEMP_DIR.glob("kiwitcms-testcases-migration-0011-BugSystem-*"):
         with file.open("r") as infile:
-            data = json.load(infile)
+            data = json.loads(infile)
             bug_system = bug_system_model(**data)
             bug_system.save()
 

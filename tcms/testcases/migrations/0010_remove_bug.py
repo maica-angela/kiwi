@@ -41,7 +41,7 @@ def backward_restore_data(apps, schema_editor):
 
     for file in settings.TEMP_DIR.glob("kiwitcms-testcases-migrations-0010-Bug-*"):
         with file.open("r") as infile:
-            data = json.load(infile)
+            data = json.loads(infile)
             bug = bug_model(**data)
             bug.save()
 
@@ -50,7 +50,7 @@ def backward_restore_data(apps, schema_editor):
     )
     link_reference_ids_file = settings.TEMP_DIR / link_reference_ids_file_name
     with link_reference_ids_file.open("r") as infile:
-        link_reference_ids = json.load(infile)
+        link_reference_ids = json.loads(infile)
         link_reference_model.objects.filter(pk__in=link_reference_ids).delete()
 
 
