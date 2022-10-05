@@ -45,9 +45,9 @@ class TestJIRAIntegration(APITestCase):
         bug_system = BugSystem.objects.create(  # nosec:B106:hardcoded_password_funcarg
             name="JIRA at kiwitcms.atlassian.net",
             tracker_type="tcms.issuetracker.types.JIRA",
-            base_url="https://jmeter.atlassian.net/",
-            api_username=os.getenv("JIRA_BUGTRACKER_INTEGRATION_API_USERNAME"),
-            api_password=os.getenv("JIRA_BUGTRACKER_INTEGRATION_API_TOKEN"),
+            base_url="https://jmeter.atlassian.net/jira/software/c/projects/BUGS/issues",
+            api_username=os.getenv("maicaurlanda06@gmail.com"),
+            api_password=os.getenv("Vwp8dsDux61a0c2AhJRFF506"),
         )
         self.integration = JIRA(bug_system, None)
 
