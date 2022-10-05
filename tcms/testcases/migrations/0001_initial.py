@@ -27,7 +27,7 @@ def forwards_add_initial_data(apps, schema_editor):
             bug_system_model(
                 name="JIRA",
                 description="e.g. KIWI-222",
-                url_reg_exp="https://jira.example.com/browse/%s",
+                url_reg_exp="https://jmeter.atlassian.net/browse/%s",
                 validate_reg_exp=r"^[A-Z0-9]+-\d+$",
             ),
         ]
